@@ -1,0 +1,33 @@
+/* --- IMPORTS --- */
+
+/* --- global --- */
+@use './styles/colors';
+@use './styles/typography';
+@use './styles/global';
+
+/* --- atoms --- */
+@use './styles/atoms/buttons';
+@use './styles/atoms/checkbox';
+@use './styles/atoms/icons';
+@use './styles/atoms/inputs';
+@use './styles/atoms/slider-indicator';
+@use './styles/atoms/tabs';
+@use './styles/atoms/tags';
+@use './styles/atoms/titles';
+@use './styles/atoms/tooltips';
+
+/* --- components --- */
+@use './styles/components/cards';
+@use './styles/components/contact';
+@use './styles/components/filters';
+@use './styles/components/footer';
+@use './styles/components/forms';
+@use './styles/components/hero';
+@use './styles/components/modal';
+@use './styles/components/navbar';
+@use './styles/components/search';
+@use './styles/components/slider';
+
+/* --- layouts --- */
+@use './styles/layouts/travel-results';
+

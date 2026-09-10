@@ -1,0 +1,17 @@
+:root {
+      /* --- tag --- */
+}
+
+.tag {
+  position: absolute;
+  z-index: 1;
+  top: 12px;
+  right: 12px;
+  padding: 4px 12px;
+  border-radius: 20px;
+  background: var(--color-secondary);
+  color: var(--color-text-dark);
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 700;
+}

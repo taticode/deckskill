@@ -1,0 +1,124 @@
+
+:root {
+
+  /* --- modal --- */
+
+}
+
+.price-modal {
+  width: min(400px, calc(100% - 32px));
+  padding: 0;
+  border: 1px solid var(--color-background-light);
+  border-radius: 16px;
+  overflow: hidden;
+  color: var(--color-text-dark);
+  box-shadow: 0 4px 8px 0 #00000033;
+}
+
+.price-modal::backdrop {
+  background: var(--color-text-muted-alpha);
+}
+
+.price-modal__header {
+  min-height: 56px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  background: var(--color-secondary-lightest);
+}
+
+.price-modal__header h2 {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+}
+
+.price-modal__header button {
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+}
+
+.price-modal__header button [data-icon] {
+  width: 24px;
+  height: 24px;
+  flex: 0 0 24px;
+}
+
+.price-modal__body {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.price-modal__title {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-body);
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.price-modal__title strong {
+  font-weight: 700;
+}
+
+.price-modal dl {
+  margin: 0;
+  display: grid;
+  gap: 16px;
+}
+
+.price-modal dl div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.price-modal dt,
+.price-modal dd {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.price-modal dd {
+  font-weight: 700;
+}
+
+.price-modal__total {
+  min-height: 68px;
+  padding: 20px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  background: var(--color-secondary-lightest);
+  border-top: 1px solid var(--color-background-light);
+  font-family: var(--font-heading);
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+}
+
+.price-modal__total strong {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}

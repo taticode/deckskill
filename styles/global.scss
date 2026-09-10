@@ -1,0 +1,17 @@
+/* --- start global styles --- */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  color: var(--color-text-dark);
+  background: var(--color-white);
+  font-family: var(--font-body);
+}
+
+/* --- end global styles --- */

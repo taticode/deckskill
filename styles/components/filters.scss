@@ -1,0 +1,130 @@
+:root{
+      /* --- filters --- */
+}
+
+
+.filter-section__trigger > span:first-child {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.filter-button {
+  display: none;
+}
+
+.filters {
+  background: var(--color-secondary-lightest);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.filters__header {
+  min-height: 64px;
+  padding: 16px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--color-background-light);
+}
+
+.filters__header h3 {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: 18px;
+  line-height: 24px;
+  padding: 12px 8px;
+}
+
+.filters__header button {
+  border: 0;
+  background: transparent;
+  font-size: 28px;
+  cursor: pointer;
+  color: var(--color-text-dark);
+  display: none;
+}
+
+.filters__body {
+  padding: 12px 24px 32px;
+}
+
+.filter-section__trigger {
+  width: 100%;
+  min-height: 48px;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  color: var(--color-text-dark);
+  font-weight: 400;
+  text-align: left;
+
+  [data-icon^="chevron"] {
+    padding: 6px;
+  }
+}
+.filter-type {
+  width: 18px;
+  height: 18px;
+  flex: 0 0 18px;
+}
+
+.filter-section {
+  label {
+    padding: 16px;
+  }
+}
+
+.filter-section__trigger--accent {
+  color: var(--color-secondary-darker);
+}
+.filters__more {
+  display: inline-block;
+  margin: 4px 0 12px 12px;
+  color: var(--color-primary);
+  font-size: 12px;
+}
+
+@media (max-width: 1100px) {
+  .filters {
+    position: fixed;
+    z-index: 50;
+    top: 80px;
+    bottom: 0;
+    left: 0;
+    width: min(320px, 88vw);
+    transform: translateX(-105%);
+    transition: transform .2s ease;
+    overflow-y: auto;
+    border-radius: 0;
+  }
+
+  .filters.is-open {
+    transform: translateX(0);
+  }
+
+  .filter-button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0 auto 24px;
+    padding: 8px 14px;
+    border: 1px solid var(--color-background-light);
+    border-radius: 24px;
+    background: var(--color-secondary-lightest);
+    color: var(--color-text-dark);
+    cursor: pointer;
+  }
+  .filters__header button {
+    display: block;
+  }
+}
+@media (max-width: 1100px) {
+  .filters {
+    top: 64px;
+  }
+}

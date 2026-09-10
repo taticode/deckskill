@@ -1,0 +1,20 @@
+
+
+
+.slider-indicator {
+  display: flex;
+  gap: 8px;
+}
+
+.slider-indicator__dot {
+  width: 10px;
+  height: 10px;
+  padding: 0;
+  border: 1px solid var(--color-white);
+  border-radius: 50%;
+  background: var(--color-border-strong);
+}
+
+.slider-indicator__dot--active {
+  background: var(--color-secondary);
+}

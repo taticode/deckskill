@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Waveless - descubre tus próximas aventuras." data-i18n-meta="description:meta.description">
+  <title data-i18n="meta.title">Waveless · Aventuras</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Syne:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="navbar" data-navbar>
+    <a class="navbar__logo" href="#" aria-label="Waveless, inicio" data-i18n="brand.name" data-i18n-attr="aria-label"><img src="assets/brand/header-logo.svg" alt="Waveless"></a>
+    <nav class="navbar__nav" aria-label="Navegación principal" data-i18n="nav.main" data-i18n-attr="aria-label">
+      <a class="navbar__link navbar__link--active" href="#aventuras"><span data-icon="mountains" aria-hidden="true"></span><span data-i18n="nav.adventure">Aventura</span></a>
+      <a class="navbar__link" href="#aventuras"><span data-icon="world" aria-hidden="true"></span><span data-i18n="nav.destinations">Destinos</span></a>
+      <a class="navbar__link" href="#aventuras"><span data-icon="tent" aria-hidden="true"></span><span data-i18n="nav.accommodation">Alojamiento</span></a>
+      <a class="navbar__link" href="#" data-i18n="nav.about">Sobre nosotros</a>
+    </nav>
+    <a class="button button--primary navbar__reserve" href="#aventuras" data-i18n="actions.reserve">Reserva</a>
+    <button class="navbar__toggle" type="button" aria-label="Abrir menú" aria-expanded="false" data-menu-toggle data-i18n="nav.openMenu" data-i18n-attr="aria-label"><span data-icon="burger-menu" aria-hidden="true"></span></button>
+  </header>
+
+  <main>
+    <section class="hero" aria-label="Promoción destacada" data-i18n="hero.label" data-i18n-attr="aria-label">
+      <div class="hero__image" role="img" aria-label="Mapa de carretera de una aventura por Australia" data-i18n="hero.imageAlt" data-i18n-attr="aria-label"></div>
+      <div class="hero__overlay"></div>
+      <button class="slider-nav slider-nav--left" type="button" aria-label="Anterior" data-hero-prev data-i18n="slider.previous" data-i18n-attr="aria-label"><span data-icon="chevron-left" aria-hidden="true"></span></button>
+      <div class="hero__content">
+        <div class="hero__copy">
+          <h1 class="hero__title" data-i18n="hero.title">Ruta por Australia</h1>
+          <p class="hero__subtitle" data-i18n="hero.subtitle">Si te va la aventura, no te lo puedes perder</p>
+          <a class="button button--accent button--lg" href="#aventuras" data-i18n="actions.moreInfo">Más información</a>
+        </div>
+        <div class="slider-indicator" aria-label="Diapositiva 1 de 3" data-i18n="slider.slideCount" data-i18n-attr="aria-label">
+          <button class="slider-indicator__dot slider-indicator__dot--active" type="button" aria-label="Diapositiva 1" data-i18n="slider.slide1" data-i18n-attr="aria-label"></button>
+          <button class="slider-indicator__dot" type="button" aria-label="Diapositiva 2" data-i18n="slider.slide2" data-i18n-attr="aria-label"></button>
+          <button class="slider-indicator__dot" type="button" aria-label="Diapositiva 3" data-i18n="slider.slide3" data-i18n-attr="aria-label"></button>
+        </div>
+      </div>
+      <button class="slider-nav slider-nav--right" type="button" aria-label="Siguiente" data-hero-next data-i18n="slider.next" data-i18n-attr="aria-label"><span data-icon="chevron-right" aria-hidden="true"></span></button>
+
+    </section>
+
+    <section class="adventures" id="aventuras">
+      <header class="adventures__header">
+        <h2 data-i18n="adventures.title">Vive tus propias aventuras</h2>
+        <p data-i18n="adventures.subtitle">Para los que les gusta explorar y conocer mundo sin complejos</p>
+      </header>
+
+      <button class="filter-button" type="button" data-filter-open aria-controls="filters" aria-expanded="false">
+        <span data-icon="filter" aria-hidden="true"></span> <span data-i18n="filters.show">Ver filtros</span>
+      </button>
+
+      <div class="adventures__layout">
+        <aside class="filters" id="filters" aria-label="Filtros de búsqueda" data-i18n="filters.label" data-i18n-attr="aria-label">
+          <div class="filters__header">
+            <h3 data-i18n="filters.title">Filtrar mi búsqueda</h3>
+            <button type="button" aria-label="Cerrar filtros" data-filter-close data-i18n="filters.close" data-i18n-attr="aria-label">×</button>
+          </div>
+          <div class="filters__body">
+            <button class="filter-section__trigger" type="button"><span><span data-icon="world" aria-hidden="true"></span><span data-i18n="nav.destinations">Destinos</span></span><span data-icon="chevron-right" aria-hidden="true"></span></button>
+            <div class="filter-section filter-section--open">
+              <button class="filter-section__trigger" type="button"><span><span data-icon="mountains" aria-hidden="true"></span><span data-i18n="nav.adventure">Aventura</span></span><span data-icon="chevron-down" aria-hidden="true"></span></button>
+              <label class="checkbox"><input type="checkbox"><span class="checkbox__box"></span><span data-i18n="activities.quads">Quads</span><small>ⓘ</small></label>
+              <label class="checkbox"><input type="checkbox" checked><span class="checkbox__box"></span><span data-i18n="activities.paragliding">Parapente</span><small>ⓘ</small></label>
+              <label class="checkbox"><input type="checkbox"><span class="checkbox__box"></span><span data-i18n="activities.rafting">Rafting</span><small>ⓘ</small></label>
+              <label class="checkbox"><input type="checkbox" checked><span class="checkbox__box"></span><span data-i18n="activities.explore">Explora</span><small>ⓘ</small></label>
+              <label class="checkbox"><input type="checkbox"><span class="checkbox__box"></span><span data-i18n="activities.diving">Buceo</span><small>ⓘ</small></label>
+              <label class="checkbox"><input type="checkbox"><span class="checkbox__box"></span><span data-i18n="activities.skydiving">Paracaídas</span><small>ⓘ</small></label>
+              <label class="checkbox"><input type="checkbox"><span class="checkbox__box"></span><span data-i18n="activities.snowboard">Snowboard</span><small>ⓘ</small></label>
+              <label class="checkbox"><input type="checkbox"><span class="checkbox__box"></span><span data-i18n="activities.surf">Surf</span><small>ⓘ</small></label>
+              <a class="filters__more" href="#" data-i18n="filters.more">Ver 21 más</a>
+            </div>
+            <button class="filter-section__trigger" type="button"><span><span data-icon="tent" aria-hidden="true"></span><span data-i18n="nav.accommodation">Alojamiento</span></span><span data-icon="chevron-right" aria-hidden="true"></span></button>
+            <div class="filter-section filter-section--open">
+              <button class="filter-section__trigger filter-section__trigger--accent" type="button"><span><span data-icon="price" aria-hidden="true"></span><span data-i18n="filters.price">Precio</span></span><span data-icon="chevron-down" aria-hidden="true"></span></button>
+              <label class="text-input"><span data-icon="price" aria-hidden="true"></span><input type="number" placeholder="Mínimo" data-i18n="filters.minimum" data-i18n-attr="placeholder"></label>
+              <label class="text-input"><span data-icon="price" aria-hidden="true"></span><input type="number" placeholder="Máximo" data-i18n="filters.maximum" data-i18n-attr="placeholder"></label>
+            </div>
+          </div>
+        </aside>
+
+        <div class="results" data-results></div>
+      </div>
+    </section>
+  </main>
+
+  <dialog class="price-modal" data-modal>
+    <div class="price-modal__header">
+      <h2 data-i18n="modal.title">Desglose de precios</h2>
+      <button type="button" aria-label="Cerrar" data-modal-close data-i18n="actions.close" data-i18n-attr="aria-label"><span data-icon="close" aria-hidden="true"></span>
+      </button>
+    </div>
+    <div class="price-modal__body"><p class="price-modal__title">
+      <strong data-i18n="cards.bangkok.location">Bangkok, Tailandia</strong> 
+      <span data-i18n="cards.bangkok.days">9 días</span>
+      </p>
+        <dl>
+          <div>
+            <dt data-i18n="modal.beforeTaxes">Precio antes de impuestos</dt>
+            <dd>1.124,00 €</dd>
+          </div>
+          <div>
+            <dt data-i18n="modal.tax">Impuesto</dt>
+            <dd>4,43 €</dd></div><div><dt data-i18n="modal.other">Lorem ipsum</dt>
+              <dd>150,42 €</dd>
+          </div>
+        </dl>
+    </div>
+    <div class="price-modal__total">
+      <span data-i18n="modal.finalPrice">Precio final</span>
+      <strong>2.455,00 €</strong>
+    </div>
+  </dialog>
+
+  <footer class="footer">
+    <div class="footer__main"><a class="navbar__logo" href="#" aria-label="Waveless, inicio" data-i18n="brand.name" data-i18n-attr="aria-label"><img src="assets/brand/header-logo.svg" alt="Waveless"></a></div>
+    <div class="footer__bottom" data-i18n="footer.copyright">@2024 Waveless - Todos los derechos reservados.</div>
+  </footer>
+  <script src="translations.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
